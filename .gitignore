@@ -1,0 +1,6 @@
+# General
+.DS_Store
+
+# Directories created
+_metadata
+node_modules

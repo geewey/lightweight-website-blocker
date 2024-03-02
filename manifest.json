@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Lightweight Website Blocker",
+  "version": "0.0.1",
+  "description": "Lightweight Chrome extension that blocks access to user-specified websites. Block list comes pre-loaded with common distractors.",
+  "author": "geewey.dev@gmail.com",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+}
