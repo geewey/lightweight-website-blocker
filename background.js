@@ -4,8 +4,11 @@ const INITIAL_SITES_TO_BLOCK = [
   "cnn.com",
   "foxnews.com",
   "facebook.com",
-  "gmail.com",
   "linkedin.com",
+  "mail.google.com",
+  "youtube.com",
+  "instagram.com",
+  "x.com",
 ];
 
 chrome.runtime.onInstalled.addListener(() => {
@@ -76,7 +79,16 @@ function updateRules() {
       id: index + 1,
       priority: 1,
       action: { type: "block" },
-      condition: { urlFilter: site, resourceTypes: ["main_frame"] },
+      condition: {
+        urlFilter: site,
+        resourceTypes: [
+          "main_frame",
+          "sub_frame",
+          "script",
+          "xmlhttprequest",
+          "image",
+        ],
+      },
     }));
 
     // then get all all existing rules
