@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lightweight Website Blocker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight Chrome extension that blocks access to user-specified websites. Block list comes pre-loaded with common distractors.",
   "author": "geewey.dev@gmail.com",
   "icons": {
