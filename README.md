@@ -41,4 +41,4 @@ For any questions, refer to instructions on the Google Chrome page, [Load an unp
 ### 0.0.1, updated 2025-10-21
 - initial release to Chrome Web Store
 - users can specify website URLs to be blocked
-- extension includes additioanl
+- extension includes pre-loaded URLs
